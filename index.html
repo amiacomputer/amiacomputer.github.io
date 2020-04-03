@@ -1,0 +1,41 @@
+<style>
+.visi{
+  display: block !important
+}
+</style>
+<center>
+<div>
+<script>
+document.clickFunc = function(){
+if(document.querySelector('#numInput').value == 5){
+document.querySelector('#failbanner').classList.remove('visi')
+document.querySelector('#banner').classList.add('visi')
+}
+else{
+document.querySelector('#banner').classList.remove('visi')
+document.querySelector('#failbanner').classList.add('visi')
+}
+}
+</script>
+<h2>
+What is 2 + 3?
+</h2>
+<input type="number" step="1" id="numInput">
+<button onclick="document.clickFunc()">Calculate</button>
+<div id="banner" style="display:none">
+<h2>
+YES
+</h2>
+</div>
+<div id="failbanner" style="display:none">
+<h2>
+You are a failure as a computer...
+</h2>
+</div>
+
+</div>
+<script>
+
+</script>
+
+</center>
